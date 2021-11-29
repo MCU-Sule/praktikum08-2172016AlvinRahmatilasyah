@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE-edge">
+        <meta name="author" content="Alvin Rahmatilasyah 2172016">
+        <title>index</title>
+    </head>
+    <body>
+        <script>
+            var n = prompt  ("Bilangan yang inging di cek: ")
+            var angkaprima= true
+
+            if (n == 0 || n == 1) {
+                angkaprima = false;
+            }
+            else {
+                for (i = 2; i <= n / 2; i++) {
+                    if (n % i == 0) {
+                    pembagi = i;
+                    angkaprima = false;
+                    }
+                }
+            }
+ 
+            if (angkaprima) {
+                document.write ("Bilangan " + n + " adalah angka prima");
+            }
+            else {
+                 document.write ("Bilangan " + n + " bukan angka prima");
+            }
+    </script>
+    </body>
+
+</html>

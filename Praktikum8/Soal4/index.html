@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE-edge">
+        <meta name="author" content="Alvin Rahmatilasyah 2172016">
+        <title>index</title>
+    </head>
+    <body>
+        <table > 
+            <script>
+                var a= prompt("Jumlah baris: ")
+                var b= prompt("Jumlah kolom: ")
+                var c= prompt("Warna 1 (Hexadecimal): ")
+                var d= prompt("Warna 2 (Hexadecimal): ")
+        
+        
+                for (i=1; i<=a; ++i) {
+                    let f=  "<tr style=' background-color: #"+ d + ";'>"
+                   
+                    document.write(f);
+                    
+                    for (n= 1; n<=b; ++n) {
+        
+                            if ( (i % 2 == 0 ) && (n % 2 == 1)) {  
+                                let e = i*n;
+                                document.write("<td style=' background-color: #"+ d + ";'>" +  e +  "</td>");
+
+                            }
+                            if ( (i % 2 == 0 ) && (n % 2 == 0)) {  
+                                let e = i*n;
+                                document.write("<td style=' background-color: #"+ c + ";'>" +  e+  "</td>");
+                            }
+                            if ( (i % 2 == 1 ) && (n % 2 == 1)) {  
+                                let e = i*n;
+                                document.write("<td style=' background-color: #"+ c  + ";'>" +  e +  "</td>");
+
+                            }
+                            if ( (i % 2 == 1 ) && (n % 2 == 0)) {  
+                                let e = i*n;
+                                document.write("<td style=' background-color: #"+ d + ";'>" +  e+  "</td>");
+
+                            }
+                         }        
+                        document.write("</tr>")
+                    }
+
+                
+            </script>
+        </table>
+    </body>
+</html>
